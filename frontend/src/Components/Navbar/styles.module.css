@@ -1,0 +1,99 @@
+/* Container padding */
+.container {
+  padding: 1.2rem;
+  width: 100%;
+  background-color: #0073b1;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar layout */
+.navBar { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: auto; 
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navbar options container */
+.navBarOptionContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Auth options wrapper */
+.authOptions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Join button */
+.buttonJoin {
+  background: #cd8987;
+  border-radius: 10px;
+  padding-block: 0.6rem;
+  padding-inline: 1.2rem;
+  color: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.buttonJoin:hover {
+  background: #b36f6b;
+}
+
+/* Auth links */
+.navLink {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+
+.navLink:hover {
+  color: #e0e0e0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navBarOptionContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .authOptions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 0.4rem 0;
+  }
+
+  .buttonJoin {
+    width: 100%;
+  }
+}
