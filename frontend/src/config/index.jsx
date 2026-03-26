@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "http://localhost:9090";
+export const BASE_URL = "https://linkedin-backend-4q4s.onrender.com";
 
 //separate axios instance for user routes
 export const userServer = axios.create({
