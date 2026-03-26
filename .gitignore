@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# env files
+.env
+**/.env
+.env.*
+**/.env.*
+
+# backend-only local files
+backend/api.http
+
+# Next.js
+frontend/.next/
+.next/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# build output
+dist/
+build/
+out/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
